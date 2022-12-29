@@ -24,3 +24,39 @@ body {
   background-color: var(--background-color);
   color: var(--text-colors);
 }
+
+/* Nav section */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 4rem;
+}
+
+.netflix--logo {
+  width: 15rem;
+}
+
+.nav--button {
+  display: inline-flex;
+}
+
+.lang--button,
+.sign--button {
+  width: 8.5rem;
+  height: 3.5rem;
+  text-align: center;
+  display: inline-block;
+  padding-top: 0.5rem;
+  border-radius: 3px;
+  margin: 1.5rem;
+}
+
+.sign--button {
+  color: var(--text-colors);
+  background: var(--primary-color);
+}
+
+.lang--button {
+  border: 1px solid var(--text-colors);
+}
