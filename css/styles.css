@@ -23,41 +23,59 @@ body {
   font-size: 1.6rem;
   background-color: var(--background-color);
   color: var(--text-colors);
+  height: 95vh;
 }
 
-/* Nav section */
+/* Main section */
 
-.nav {
+.main {
+  width: 100%;
+  height: 95vh;
+  position: relative;
+  background: url(/images/Netlfix\ background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* nav section */
+
+.nav--top {
   display: flex;
   justify-content: space-between;
-  margin: 2rem 4rem;
+  align-items: center;
+  margin: 0 5rem;
+  height: 90px;
 }
 
-.netflix--logo {
-  width: 15rem;
+.nav--logo {
+  width: 17rem;
 }
 
-.nav--button {
-  display: inline-flex;
+.nav--lang {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgb(220, 220, 220);
 }
 
-.lang--button,
-.sign--button {
-  width: 8.5rem;
-  height: 3.5rem;
-  text-align: center;
+.nav--sign {
+  background-color: var(--primary-color);
+  border: 0;
+}
+
+.nav--lang,
+.nav--sign {
+  color: rgb(255, 255, 255);
   display: inline-block;
-  padding-top: 0.8rem;
-  border-radius: 3px;
-  margin: 1.5rem;
-  cursor: pointer;
+  width: 8.4rem;
+  height: 3.4rem;
+  margin: 0 1rem;
+  border-radius: 4px;
 }
 
-.sign--button {
-  color: var(--text-colors);
-  background: var(--primary-color);
+.nav--lang:hover {
+  color: black;
+  background-color: rgb(255, 255, 255);
 }
-
-.lang--button {
-  border: 1px solid var(--text-colors);
+.nav--sign:hover {
+  background-color: rgb(216, 9, 19);
 }
