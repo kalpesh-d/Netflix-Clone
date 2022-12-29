@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "netflix sans";
+  src: url("/fonts/netflixsans-medium-webfont.woff2") format("woff2"),
+    url("/fonts/netflixsans-medium-webfont.woff") format("woff");
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "netflix sans";
+  src: url("/fonts/netflixsans-regular-webfont.woff2") format("woff2"),
+    url("/fonts/netflixsans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
