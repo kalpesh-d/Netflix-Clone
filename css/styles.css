@@ -187,6 +187,7 @@ h1 {
   }
 
   .main--head {
+    max-width: 80rem;
     font-size: 6.4rem;
     margin: 0 7.5rem;
   }
