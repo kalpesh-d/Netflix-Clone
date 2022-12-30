@@ -35,12 +35,13 @@ h1 {
 
 .main {
   width: 100%;
-  height: 95vh;
+  height: 509.2px;
   position: relative;
   background: url(/images/Netlfix\ background.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  border-bottom: 8px solid rgb(34 34 34);
 }
 
 .main::after {
@@ -102,6 +103,9 @@ h1 {
 
 @media only screen and (min-width: 1450px),
   only screen and (min-width: 950px) and (max-width: 1449px) {
+  .main {
+  }
+
   .nav--top {
     margin: 0 5rem;
   }
@@ -181,6 +185,9 @@ h1 {
 
 @media only screen and (min-width: 1450px),
   only screen and (min-width: 950px) and (max-width: 1449px) {
+  .main {
+    height: 95vh;
+  }
   .main--div {
     padding: 75px 0;
     margin: 7.5rem auto;
@@ -228,5 +235,70 @@ h1 {
   .right-arrow {
     height: 2.5rem;
     margin: -0.3rem 0.5rem;
+  }
+}
+
+/* Tv section */
+
+.tv--section {
+  align-items: center;
+  color: rgb(255 255 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 3rem 2rem;
+  position: relative;
+  border-bottom: 8px solid rgb(34 34 34);
+}
+
+.tv--head {
+  margin: 0 0 2rem 0;
+}
+
+.tv--head1 {
+  font-size: 2.6rem;
+  text-align: center;
+}
+
+.tv--head2 {
+  font-size: 1.8rem;
+  font-weight: normal;
+  text-align: center;
+  margin: 1.5rem auto;
+}
+
+.video {
+  max-width: 35rem;
+}
+
+@media only screen and (min-width: 1450px),
+  only screen and (min-width: 950px) and (max-width: 1449px) {
+  .tv--section {
+    display: flex;
+    flex-direction: row;
+    padding: 8.5rem 19rem;
+    max-width: 100%;
+    border-bottom: 8px solid rgb(34 34 34);
+  }
+
+  .tv--head {
+    margin: 0 10rem 0 0;
+  }
+
+  .tv--head1 {
+    font-size: 5rem;
+    text-align: left;
+    margin: 0 0 2rem 0;
+  }
+
+  .tv--head2 {
+    font-size: 2.6rem;
+    text-align: left;
+  }
+
+  .video {
+    max-width: 50rem;
   }
 }
