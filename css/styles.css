@@ -108,6 +108,7 @@ h2 {
   height: 2.4rem;
   margin: 0 0.2rem;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .nav--lang:hover {
@@ -187,6 +188,7 @@ h2 {
   width: 13rem;
   height: 4rem;
   margin: 1rem auto 0;
+  cursor: pointer;
 }
 
 .input--div {
@@ -460,5 +462,51 @@ h2 {
 
   .watch--video {
     margin: 0;
+  }
+}
+
+/* Kids Section */
+
+.kids {
+  border-bottom: var(--border-bottom);
+}
+
+.kids--slogan {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.kids--slogan_2 {
+  font-weight: normal;
+  padding: 0 1rem;
+}
+
+.kids--img {
+  max-width: 100%;
+}
+
+.kids--image {
+  margin-bottom: 3rem;
+}
+
+@media only screen and (min-width: 1450px),
+  only screen and (min-width: 950px) and (max-width: 1449px) {
+  .kids {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 3.5rem 18rem;
+  }
+
+  .kids--img {
+    max-width: 50rem;
+  }
+
+  .kids--slogan {
+    margin: 0 0 0 10rem;
+  }
+
+  .kids--slogan_2 {
+    padding: 0;
   }
 }
