@@ -515,6 +515,7 @@ h2 {
 
 .faq {
   padding: 7rem 3rem;
+  border-bottom: 8px solid var(--border-bottom);
 }
 
 .faq--question {
@@ -523,9 +524,9 @@ h2 {
 }
 
 .questions {
+  margin: 1.25em auto;
+  max-width: 815px;
   font-size: 2.3rem;
-  max-width: 63.5rem;
-  margin: 0 auto;
 }
 
 .plus-icon {
@@ -553,4 +554,73 @@ h2 {
   display: none;
   overflow: hidden;
   margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 349px),
+  only screen and (min-width: 350px) and (max-width: 399px),
+  only screen and (min-width: 400px) and (max-width: 549px) {
+  .faq--question {
+    font-size: 2.5rem;
+  }
+}
+
+/* Second input */
+
+.sec-input {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+}
+
+.sec-heading {
+  margin: 0 auto 1.5rem;
+  padding: 0 5%;
+}
+
+.sec-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sec-email {
+  height: 48px;
+  padding: 0 10px 0;
+  width: 100%;
+}
+
+.get-started {
+  min-height: 40px;
+  color: var(--text-colors);
+  background-color: var(--primary-color);
+  border: 0;
+  padding: 0 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.arrow {
+  display: inline;
+}
+
+@media only screen and (min-width: 1450px),
+  only screen and (min-width: 950px) and (max-width: 1449px) {
+  .sec-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 30rem;
+  }
+}
+
+@media only screen and (max-width: 349px),
+  only screen and (min-width: 350px) and (max-width: 399px),
+  only screen and (min-width: 400px) and (max-width: 549px) {
+  .sec-heading {
+    padding: 0;
+  }
+  .sec-email {
+    margin-bottom: 1.5rem;
+  }
 }
